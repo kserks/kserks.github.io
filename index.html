@@ -4,43 +4,27 @@
 	<title>Kasin Sergey</title>
 	<meta charset="utf-8">
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
 
 <style type="text/css">
 
 </style>
 </head>
 <body>
-<div class="top-menu-bar">
-	
-	<nav class="top-menu">
-			<a class="top-menu-logo" href="/">K</a>
-			<a href="#services">Услуги</a>
-			<a href="#about">Обо мне</a>
-			<a href="#portfolio">Портфолио</a>
-			<a href="#contacts">Контакты</a>
+<section class="top-bar">
+	<logo><a class="top-bar__logo" href="/">Главная</a></logo>
+	<nav class="top-bar__menu">
+			<a class="top-bar__item" href="/#portfolio">Портфолио</a>
+			<a class="top-bar__item" href="/#services">Обо мне</a>
+			<a class="top-bar__item" href="/#contacts">Контакты</a>
 	</nav>	
-</div>
-
-<section class="aside">
-<section class="logo">
-	<a href="/"><h1>kserks.github.io</h1></a>
 </section>
-	<nav class="main-menu">
-		<ul>
-			<li><a href="#services">Услуги</a></li>
-			<li><a href="#about">Обо мне</a></li>
-			<li><a href="#portfolio">Портфолио</a></li>
-			<li><a href="#contacts">Контакты</a></li>
-		</ul>
-	</nav>
-	
 
-</section class="aside">
-<section class="wall">
 
-<div class="block-screen" id="services">
-	<h3>Список услуг</h3>
+<main class="main">
+
+<section class="main__screen main__service" id="services">
+	<h1>Список услуг</h1>
 	<ul>
 		<li><b>Создание бота</b></li>
 		<li><b>Парсинг сайтов</b></li>
@@ -52,45 +36,94 @@
 		ТАк же сюда можно добавить всяких пиктограм
 		для красоты и что бы пустоты не было
 	</p>
-</div>
-
-<div class="block-screen" id="about">
-	<h4>Обо мне</h4>
-	<p>Рассказываю немного о том как я пришел к такой жизни</p>
-
-	
-</div>
+</section>
 
 
-<div class="block-screen" id="portfolio">
-	<h3>Примеры работ</h3>
+<section class="main__screen main__portfolio" id="portfolio">
+	<h1>Портфолио</h1>
 
-<div class="portfolio-cards">
-	<div class="card">200px</div>
-	<div class="card">200px</div>
-	<div class="card">200px</div>
-	<div class="card">200px</div>
-	<div class="card">200px</div>
-</div>
-
-</div>
-
-
-
-<div class="block-screen" id="contacts">
-<footer>
-	<h1>Связаться со мной</h1>
-	<ul>
-		<li><a href="https://vk.com/bakakasin">Вконтакте</a></li>
-		<p><a href="mailto:bakakasin@gmail.com">bakakasin@gmail.com</a></p>
-	</ul>
-</footer>
-</div>
-
+<section class="portfolio">
+	<a href="https://inoru.ru" class="portfolio__card portfolio__card--inoru" target="_blank">_</a>
+	<a href="/#portfolio" class="portfolio__card">Пусто</a>
+	<a href="/#portfolio" class="portfolio__card">Пусто</a>
+	<a href="/#portfolio" class="portfolio__card">Пусто</a>
+	<a href="/#portfolio" class="portfolio__card">Пусто</a>
+	<a href="/#portfolio" class="portfolio__card">Пусто</a>
+</section>
 
 </section>
 
 
+<section class="main__screen main__about" id="about">
+	<h4>Обо мне</h4>
+	<p>Рассказываю немного о том как я пришел к такой жизни</p>
 
+	
+</section>
+
+
+
+
+
+<section class="main__screen main__contacts" id="contacts">
+
+	<h1>Контакты</h1>
+	<div>
+		<div class="contacts vk"></div>
+		<a href="https://vk.com/bakakasin">bakakasin</a>
+	</div>
+
+	<div>
+		<div class="contacts email"></div>
+		<a href="mailto:bakakasin@gmail.com">bakakasin@gmail.com</a>
+	</div>
+	
+	<div>
+		<div class="contacts inst"></div>
+		<a href="https://instagram.com/bakakasin">bakakasin</a>
+	</div>
+
+	<div>
+		<div class="contacts telegram"></div>
+		<a href="https://t.me/bakakasin">bakakasin</a>
+	</div>	
+
+	<div>
+		<div class="contacts viber"></div>
+		<a href="viber://chat?number=%2B79237578907">+7 923 757 89 07</a>
+	</div>
+	<div>
+		<div class="contacts skype"></div>
+		<a href="">bakakasin</a>
+	</div>
+</section>
+
+
+</main>
+<!--
+<footer>
+
+	<a href="#">vk</a>
+	<a href="#">fb</a>
+	<a href="#">gh</a>
+</footer>
+-->
+
+<script type="text/javascript">
+
+
+window.addEventListener('load', function(){
+/*
+var topBar = document.getElementsByClassName('top-bar')[0];
+
+topBar.addEventListener('mousedown', function(e){
+
+	console.log(e.target.innerHTML ="kaisn")
+
+});
+*/
+
+});
+</script>
 </body>
 </html>
