@@ -349,7 +349,7 @@ body:after {
   left: 0;
   right: 0;
   z-index: -1;
-  background: url(/assets/bg.png) 80%;
+  background: url(/assets/bg.jpg);
   background-size: cover;
 }
 
@@ -360,7 +360,8 @@ a {
 }
 
 h1 {
-  color: red;
+  color: white;
+  border-bottom: 4px dashed rgba(0, 0, 0, 0.5);
   user-select: none;
 }
 
@@ -407,7 +408,7 @@ h1 {
 
 /*main*/
 .main {
-  width: 50%;
+  width: 60%;
   float: right;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -415,10 +416,11 @@ h1 {
 .main__screen {
   display: inline-block;
   width: 97%;
-  height: 40vh;
-  padding-top: 7vh;
-  padding-left: 3%;
+  margin-top: 2%;
+  padding: 1.5%;
+  min-height: 100vh;
   color: white;
+  font-size: 1.3em;
 }
 
 .contacts {
@@ -469,14 +471,16 @@ h1 {
 	background-color: cyan;
 }
 */
+.main__portfolio {
+  border: 3px dashed red;
+}
+
 .portfolio__card {
   display: inline-block;
-  width: 30%;
+  width: 45%;
   height: 30vh;
   background-color: white;
-  margin: 1%;
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
-  transition: 0.5s;
 }
 
 .portfolio__card:hover {
@@ -486,21 +490,17 @@ h1 {
 
 .portfolio__card--inoru {
   background-image: url(/assets/portfolio-1.png);
+  background-size: cover;
 }
 
-/*
-
-footer{
-	width: 100%;
-	position: absolute;
-	height: 5vh;
-	top: 95vh;
-	background-color: $link-color;
-
+footer {
+  border-top: 2px solid white;
 }
-footer a{
-		color: white;
-}*/
+
+footer a {
+  color: white;
+}
+
 @media (max-width: 600px) {
   body {
     font-size: 1em;
