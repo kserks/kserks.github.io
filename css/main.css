@@ -338,7 +338,19 @@ template {
 }
 
 body {
-  overflow-y: hidden;
+  padding-right: 5%;
+}
+
+body:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: url(/assets/bg.png) 80%;
+  background-size: cover;
 }
 
 a {
@@ -394,13 +406,19 @@ h1 {
 }
 
 /*main*/
+.main {
+  width: 50%;
+  float: right;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .main__screen {
   display: inline-block;
   width: 97%;
-  height: 93vh;
+  height: 40vh;
   padding-top: 7vh;
   padding-left: 3%;
-  background-color: grey;
+  color: white;
 }
 
 .contacts {
