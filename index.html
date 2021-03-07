@@ -1,161 +1,53 @@
 <!DOCTYPE html>
-<html lang='ru'>
+<html>
 <head>
-	<title>Kasin Sergey</title>
-	<meta charset="utf-8">
-	<link rel="icon" href="favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
-
-<style type="text/css">
-
-</style>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>Касин Сергей</title>
+	<link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
-<body>
-
-<section class="top-bar">
-	<logo><a class="top-bar__logo" href="/">Главная</a></logo>
-	<nav class="top-bar__menu">
-			<a class="top-bar__item" href="/#portfolio">Портфолио</a>
-			<a class="top-bar__item" href="/#about">Обо мне</a>
-			<a class="top-bar__item" href="/#contacts">Контакты</a>
-	</nav>	
-</section>
+<main>
 
 
-<main class="main">
-
-<section class="main__screen main__service" id="services">
-	<h1>Список услуг</h1>
-	<ul>
-		<li><b>Создание бота</b></li>
-		<li><b>Парсинг сайтов</b></li>
-		<li><b>Написание плагинов для сайтов</b></li>
-		<li><b>Создание сайта под ключ</b></li>
-		<li><b>Адаптация под сайта под смартфон</b></li>
-		<li><b>Создание приложений для ВК групп</b></li>
-	</ul>
-	<p>
-		ТАк же сюда можно добавить всяких пиктограм
-		для красоты и что бы пустоты не было
-	</p>
-</section>
-
-
-<section class="main__screen main__portfolio" id="portfolio">
-	<h1>Портфолио</h1>
-
-
-	<a href="https://inoru.ru" class="portfolio__card portfolio__card--inoru" target="_blank">_</a>
-	<a href="/#portfolio" class="portfolio__card">hotkeys__</a>
-
-
-</section>
-<section class="main__screen main__portfolio">
-
-<h1></h1>
-
-	<a href="/#portfolio" class="portfolio__card">Разборы</a>
-	<a href="/#portfolio" class="portfolio__card">Деревоперерабока landing</a>
-
-
-
-	<a href="/#portfolio" class="portfolio__card">Агенство недвижимости</a>
-	<a href="/#portfolio" class="portfolio__card">d3.js Cайт с диаграммами</a>
-
-</section>
-
-<section class="main__screen main__about" id="about">
-	<h1>Обо мне</h1>
-	<p>Рассказываю немного о том как я пришел к такой жизни
-			коротко и расплывчато о себе. То что начал исправлять несовершенства
-			в CMS joomla, worldpress. Изучив при этом css/html а позже и js, php
-	</p>
-	<p>
-		В работе использую <mark>git</mark>. Делаю ветки
-	</p>
-	<p>
-		Так же использую системы сборки как <mark>gulp</mark> и <mark>webpack</mark>
-	</p>
-	<p>
-		Хорошо знаю <mark>vanila js</mark>
-		<br>
-		Python
-	</p>
-	<p>
-		Язык запросов SQL
-		Баззы данных mysql couchdb
-	</p>
-	<p>
-		node.js expressjs
-	</p>
-	
-</section>
-
-
-
-
-
-<section class="main__screen main__contacts" id="contacts">
-
-	<h1>Контакты</h1>
-	<div>
-		<div class="contacts vk"></div>
-		<a href="https://vk.com/bakakasin">bakakasin</a>
+<div class="wrapper">
+	<div class="content">
+		<div class="showcase">
+			<a href="https://inoru.ru/">
+				<img src="../assets/p_inoru.png">
+			</a>
+			<a href="https://vnjson.github.io/">
+				<img src="../assets/p_vnjson.png">
+			</a>
+		</div>
 	</div>
+</div>
 
-	<div>
-		<div class="contacts email"></div>
-		<a href="mailto:bakakasin@gmail.com">bakakasin@gmail.com</a>
-	</div>
-	
-	<div>
-		<div class="contacts inst"></div>
-		<a href="https://instagram.com/bakakasin">bakakasin</a>
-	</div>
-
-	<div>
-		<div class="contacts telegram"></div>
-		<a href="https://t.me/bakakasin">bakakasin</a>
-	</div>	
-
-	<div>
-		<div class="contacts viber"></div>
-		<a href="viber://chat?number=%2B79237578907">+7 923 757 89 07</a>
-	</div>
-	<div>
-		<div class="contacts skype"></div>
-		<a href="">bakakasin</a>
-	</div>
-</section>
-<footer class="main__screen" >
-	<a href="#">github</a>
-
-
-</footer>
+<nav>
+	<span class="nav-item nav-item__showcase">
+		<a href="/">
+			<i class="fa fa-picture-o" aria-hidden="true"></i>
+			<p>Портфолио</p>
+		</a>
+	</span>
+	<span class="nav-item nav-item__services">
+		<a href="/services">
+			<i class="fa fa-suitcase" aria-hidden="true"></i>
+			<p>Услуги</p>
+		</a>
+	</span>
+	<span class="nav-item nav-item__contacts">
+		<a href="/contacts">
+			<i class="fa fa-tablet" aria-hidden="true"></i>
+			<p>Контакты</p>
+		</a>
+	</span>
+	<span class="nav-item nav-item__about">
+		<a href="/about">
+			<i class="fa fa-user" aria-hidden="true"></i>
+			<p>Обо мне</p>
+		</a>
+	</span>
+</nav>
 
 </main>
-
-<script type="text/javascript">
-
-
-window.addEventListener('load', function(){
-
-var topBar = document.getElementsByClassName('top-bar')[0];
-
-topBar.addEventListener('mousedown', function(e){
-
-var idStr = e.target.href.split('#')[1];
-
-var elem = document.getElementById(idStr)
-
-elem.scrollIntoView({block: "center", behavior: "smooth"});
-
-
-
-});
-
-
-});
-</script>
-</body>
 </html>
