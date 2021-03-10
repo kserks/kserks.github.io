@@ -1,53 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<title>Касин Сергей</title>
 	<link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 <main>
 
 
-<div class="wrapper">
-	<div class="content">
-		<div class="showcase">
-			<a href="https://inoru.ru/">
-				<img src="../assets/p_inoru.png">
-			</a>
-			<a href="https://vnjson.github.io/">
-				<img src="../assets/p_vnjson.png">
-			</a>
-		</div>
+<div class="content">
+<!------------------Showcase----------------->	
+<section class="showcase screen">
+	<h2>Портфолио</h2>
+	<div class="showcase__carousel">
+		
+
+		<a class="carousel-cell" href="https://inoru.ru/">
+			<img src="../assets/p_inoru.png">
+		</a>
+		<a class="carousel-cell" href="https://vnjson.github.io/">
+			<img src="../assets/p_vnjson.png">
+		</a>
 	</div>
+</section>
+
+<!-----------------Services------------------>
+<section id='services' class="screen">
+		<h2>Услуги</h2>
+
+	<ul>
+		<li>Создание ботов</li>
+		<li>Парсинг сайтов</li>
+		<li>Вёрстка макета</li>
+		<li>Написание плагинов для CMS</li>
+		<li>Создание сайта под ключ</li>
+		<li>Адаптация сайта для смартфонов</li>
+
+	</ul>
+	
+</section>
+
+<!-----------------Contacts------------------>
+<section id='contacts' class="screen">
+		<h2>Контакты</h2>
+
+		<p>
+			<i class="fa fa-vk" aria-hidden="true"></i>
+			<a href="https://vk.com/bakakasin">vk.com/bakakasin</a>
+		</p>
+		<p>
+			<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+			<a href="https://t.me/bakakasin">t.me/bakakasin</a>
+		</p>
+		<p>
+			<i class="fa fa-envelope-o" aria-hidden="true"></i>
+			<a href="mailto:bakakasin@gmail.com">bakakasin@gmail.com</a>
+		</p>
+
+		<p>
+			<i class="fa fa-skype" aria-hidden="true"></i>
+			<a href="">skype: bakakasin</a>
+		</p>
+		<p>
+			<i class="fa fa-phone-square" aria-hidden="true"></i>
+			<a href="viber://chat?number=%2B79237578907">viber: +7 923 757 89 07</a>
+		</p>
+		<p>
+			<i class="fa fa-whatsapp" aria-hidden="true"></i>
+			<a href="https://api.whatsapp.com/send?phone=79237578907">whatsUp: +79237578907</a>
+		</p>
+		<p>
+			<i class="fa fa-instagram" aria-hidden="true"></i>
+			<a href="https://instagram.com/bakakasin">instagram.com/bakakasin</a>
+		</p>
+</section>
+
+<!-------------------About------------------->
+<section id='about' class="screen">
+	<h2>Обо мне</h2>
+	<div>
+		
+		<a href="https://github.com/kserks">
+			<i class="fa fa-github-alt" aria-hidden="true"></i> 
+			<span>kserks</span>
+		</a>
+	</div>
+	<p>
+		С 2013 года изучаю веб технологии
+	</p>
+	<p>
+		Любимая платформа <mark>nodejs</mark>
+	</p>
+	<p><mark>php</mark></p>
+	<p>Рассказываю немного о том как я пришел к такой жизни
+			коротко и расплывчато о себе. То что начал исправлять несовершенства
+			в CMS joomla, worldpress. Изучив при этом css/html а позже и js, php
+	</p>
+	<p>
+		В работе использую <mark>git</mark>. Делаю ветки
+	</p>
+	<p>
+		Так же использую системы сборки как <mark>gulp</mark> и <mark>webpack</mark>
+	</p>
+	<p>
+		Хорошо знаю <mark>vanilla js</mark>
+		<br>
+		<mark>Python</mark>
+	</p>
+	<p>
+		Язык запросов <mark>SQL</mark>
+		Баззы данных <mark>mySQL</mark> <mark>CouchDB</mark>
+	</p>
+	<p>
+		node.js expressjs
+	</p>
+</section>
 </div>
 
+
 <nav>
-	<span class="nav-item nav-item__showcase">
-		<a href="/">
+<a href="/" class="nav-item nav-item__showcase">
+		<span>
 			<i class="fa fa-picture-o" aria-hidden="true"></i>
 			<p>Портфолио</p>
-		</a>
-	</span>
-	<span class="nav-item nav-item__services">
-		<a href="/services">
+		</span>
+</a>
+<a href="#services" class="nav-item nav-item__services">
+		<span>
 			<i class="fa fa-suitcase" aria-hidden="true"></i>
 			<p>Услуги</p>
-		</a>
-	</span>
-	<span class="nav-item nav-item__contacts">
-		<a href="/contacts">
+		</span>
+</a>
+<a href="#contacts" class="nav-item nav-item__contacts">
+		<span>
 			<i class="fa fa-tablet" aria-hidden="true"></i>
 			<p>Контакты</p>
-		</a>
-	</span>
-	<span class="nav-item nav-item__about">
-		<a href="/about">
+		</span>
+</a>
+<a href="#about" class="nav-item nav-item__about">
+		<span>
 			<i class="fa fa-user" aria-hidden="true"></i>
 			<p>Обо мне</p>
-		</a>
-	</span>
+		</span>
+</a>		
 </nav>
+<script>
+	var flkty = new Flickity( '.showcase__carousel', {
+  cellAlign: 'center',
+  contain: false
+});
 
+</script>
 </main>
 </html>

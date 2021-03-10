@@ -2271,51 +2271,29 @@ select {
   overflow: visible;
   clip: auto; }
 
-* {
-  margin: 0;
-  padding: 0; }
-
-body {
-  color: #8f8f8f;
-  font: 12px Tahoma, sans-serif;
-  background-color: #f8f8f8;
-  margin: 0;
-  height: 100vh;
-  overflow-y: hidden; }
-
-a {
-  text-decoration: none; }
-
-.wrapper {
-  width: 100%;
-  height: 70vh;
-  background-image: url(../assets/bg.jpg);
-  background-repeat: no-repeat; }
-
-.content {
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%; }
-
 nav {
-  position: relative;
-  background: #223; }
+  position: fixed;
+  width: 100%;
+  /*-hack-inline-block margin-left*/
+  font-size: 0;
+  user-select: none; }
 
 .nav-item {
-  color: grey;
+  width: 25%;
+  height: 30vh;
   display: inline-block;
-  height: 30vh;
-  width: 24.7%;
-  font-size: 2.5em;
-  text-align: center; }
-
-.nav-item a {
-  display: block;
-  position: absolute;
-  top: 40%;
-  width: 24.7%;
-  height: 30vh;
+  font-size: 24pt;
   color: grey; }
+
+.nav-item span {
+  width: 25%;
+  text-align: center;
+  position: absolute;
+  top: 30%; }
+
+.nav-item:hover {
+  border-bottom: 3px solid #20c9aa;
+  color: #20c9aa; }
 
 .nav-item__about {
   background: #445; }
@@ -2329,14 +2307,70 @@ nav {
 .nav-item__showcase {
   background: #112; }
 
-.showcase a {
-  display: inline-block;
-  width: 200px;
-  height: 100px;
-  margin: 10px;
-  background-color: grey;
-  box-shadow: 5px 5px 10px rgba(250, 0, 0, 0.5); }
+* {
+  margin: 0;
+  padding: 0; }
 
-/**
- * background-image: url('../assets/p_inoru.png');
- */
+body {
+  color: #8f8f8f;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  height: 100vh;
+  overflow-y: hidden; }
+
+a {
+  text-decoration: none;
+  color: #4fbda9; }
+
+a:hover {
+  color: #05ebc0; }
+
+mark {
+  background-color: #8f8f8f;
+  color: white;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 3px;
+  padding-bottom: 3px; }
+
+/*
+.wrapper{
+
+	background-image: url(../assets/bg.jpg);
+	background-repeat: no-repeat;
+
+}*/
+.content {
+  /*background-color: rgba( 0, 0, 0, 0.7);*/
+  width: 100%;
+  height: 70vh;
+  font-size: 1.5em; }
+
+h2 {
+  font-size: 2.0em;
+  margin-bottom: 3%;
+  padding-bottom: 1%;
+  width: 70%;
+  margin-left: 0%;
+  border-bottom: 10px solid #556; }
+
+.screen {
+  width: 100%;
+  height: 100vh;
+  padding-top: 0;
+  padding-left: 10%; }
+
+.carousel-cell {
+  width: 400px;
+  height: 30vh;
+  margin-right: 10px; }
+
+/*
+@media screen and (max-width: 600px) {
+
+	.nav-item i{
+		display: none;
+	}
+}
+*/
