@@ -2336,13 +2336,6 @@ mark {
   padding-bottom: 3px;
   padding-top: 3px; }
 
-/*
-.wrapper{
-
-	background-image: url(../assets/bg.jpg);
-	background-repeat: no-repeat;
-
-}*/
 .content {
   /*background-color: rgba( 0, 0, 0, 0.7);*/
   width: 100%;
@@ -2350,7 +2343,7 @@ mark {
   font-size: 1em; }
 
 h2 {
-  font-size: 2.0em;
+  font-size: 1.5em;
   margin-bottom: 3%;
   padding-bottom: 1%;
   width: 70%;
@@ -2363,10 +2356,15 @@ h2 {
   padding-top: 0;
   padding-left: 10%; }
 
+.showcase__carousel {
+  width: 66%; }
+
 .carousel-cell {
   width: 400px;
-  height: 30vh;
-  margin-right: 10px; }
+  height: 300px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5); }
 
 /*
 @media screen and (max-width: 600px) {
